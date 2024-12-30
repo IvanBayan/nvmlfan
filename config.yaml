@@ -1,0 +1,14 @@
+foreground: true
+logging:
+  level: debug
+  type: stdout
+  path: /tmp/nvmlfan
+cards:
+  0:
+    mode: target
+    target: 65
+    pid: [ 20, 0.1, 0 ]
+    curve:
+      - [ 60, 30 ]
+      - [ 65, 50] 
+      - [ 75, 100]

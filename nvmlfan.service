@@ -1,0 +1,11 @@
+[Unit]
+Description=Control of nvidia GPUs fans
+
+[Service]
+User=root
+
+ExecStart=/usr/bin/nvmlfan --config /etc/nvmlfan.yaml
+ExecStopPost=/usr/bin/nvmlfan --restore
+
+[Install]
+WantedBy=multi-user.target
