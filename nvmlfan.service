@@ -4,8 +4,8 @@ Description=Control of nvidia GPUs fans
 [Service]
 User=root
 
-ExecStart=/usr/bin/nvmlfan --config /etc/nvmlfan.yaml
-ExecStopPost=/usr/bin/nvmlfan --restore
+ExecStart=/usr/local/sbin/nvmlfan --config /usr/local/etc/nvmlfan.yaml
+ExecStopPost=/usr/local/sbin/nvmlfan --restore
 
 [Install]
 WantedBy=multi-user.target
